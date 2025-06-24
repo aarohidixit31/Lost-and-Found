@@ -1,0 +1,61 @@
+.myreports-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.myreports-title {
+  font-size: 28px;
+  color: #EB6424;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.myreports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.myreport-card {
+  background: #fff;
+  border: 2px solid #F0B31A;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(250, 149, 0, 0.1);
+  transition: 0.3s;
+}
+
+.myreport-card:hover {
+  transform: translateY(-3px);
+  border-color: #FA9500;
+}
+.myreport-card {
+  border: 2px solid #F0B31A;
+  border-radius: 12px;
+  background-color: #fffaf3;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(251, 190, 50, 0.1);
+  transition: 0.3s ease;
+}
+
+.myreport-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(250, 149, 0, 0.15);
+}
+
+.delete-btn {
+  margin-top: 10px;
+  background-color: #EB6424;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.delete-btn:hover {
+  background-color: #c73e0c;
+}
