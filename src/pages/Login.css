@@ -1,0 +1,80 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foda+Display&display=swap');
+
+.login-container {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(251, 162, 54, 0.15);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(234, 100, 36, 0.2);
+}
+
+.login-container h2 {
+  font-family: 'Foda Display', sans-serif;
+  font-size: 32px;
+  color: #EB6424;
+  margin-bottom: 10px;
+}
+
+.login-container p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.login-form input {
+  width: 80%;
+  padding: 14px 16px;
+  margin: 12px 0;
+  font-size: 15px;
+  background-color: #fffaf3;
+  border: 2px solid #F0B31A;
+  border-radius: 12px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+.login-form input:focus {
+  border-color: #FA9500;
+  box-shadow: 0 0 6px rgba(250, 149, 0, 0.25);
+}
+
+.login-form button {
+  width: 90%;
+  padding: 14px;
+  background: linear-gradient(90deg, #EB6424, #FA9500);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: linear-gradient(90deg, #F37D12, #F78909);
+  transform: scale(1.02);
+}
+
+.login-form button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.footer-note {
+  font-size: 13px;
+  color: #888;
+  margin-top: 20px;
+}
