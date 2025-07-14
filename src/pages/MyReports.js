@@ -56,8 +56,12 @@ function MyReports() {
         <p className="empty-message">You haven’t reported anything yet.</p>
       ) : (
         <div className="myreports-grid">
-          {myItems.map(item => (
-            <div key={item.id} className="myreport-card">
+          {myItems.map((item, index) => (
+            <div
+              key={item.id}
+              className="myreport-card"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
               <h3>{item.title}</h3>
               <p><strong>Type:</strong> {item.type}</p>
               <p><strong>Description:</strong> {item.description}</p>
