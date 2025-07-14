@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import LostFoundList from '../components/LostFoundList';
 import './Home.css';
+import ThemeToggle from '../components/ThemeToggle';
+import Footer from '../components/Footer';
+
 
 function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -17,14 +20,10 @@ function Home() {
         <Link to="/add" className="report-button">+ Report an Item</Link>
       </div>
 
-      
-
-      {/* Mission banner */}
-      <div className="info-banner">
+      {/* <div className="info-banner">
         🧡 Our mission is to reconnect people with their lost items — quickly, safely, and with kindness.
-      </div>
+      </div> */}
 
-      {/* Safety Tips */}
       <div className="safety-tips">
         <h3>🔒 Safety Tips</h3>
         <ul>
@@ -33,7 +32,7 @@ function Home() {
           <li>Keep records or pictures of lost items.</li>
         </ul>
       </div>
-      {/* Search and Filter */}
+
       <div className="search-container">
         <div className="search-bar">
           <input
@@ -55,14 +54,12 @@ function Home() {
         </div>
       </div>
 
-      {/* Filtered Lost & Found Items */}
-      <LostFoundList searchTerm={searchTerm} filterType={filterType} />
+      <div className="scroll-section">
+        <LostFoundList searchTerm={searchTerm} filterType={filterType} />
+      </div>
 
-      {/* Footer */}
-      <footer className="home-footer">
-        <p>Need help? <a href="#">Contact Us</a> | <a href="#">Privacy Policy</a> | <a href="#">FAQ</a></p>
-        <p>© 2025 Lost & Found Portal. All rights reserved.</p>
-      </footer>
+     <Footer />
+     <ThemeToggle />
     </div>
   );
 }

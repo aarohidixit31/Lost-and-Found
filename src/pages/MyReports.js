@@ -13,23 +13,27 @@ function MyReports() {
   useEffect(() => {
     if (!currentUser) {
       navigate('/login');
-      return;
+    } else {
+      fetchMyItems();
     }
-
-    fetchMyItems();
-  }, [currentUser, navigate]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentUser]);
 
   const fetchMyItems = async () => {
-    const q = query(
-      collection(db, 'reportedItems'),
-      where('userId', '==', currentUser.uid)
-    );
-    const querySnapshot = await getDocs(q);
-    const items = querySnapshot.docs.map(doc => ({
-      id: doc.id,
-      ...doc.data(),
-    }));
-    setMyItems(items);
+    try {
+      const q = query(
+        collection(db, 'reportedItems'),
+        where('userId', '==', currentUser.uid)
+      );
+      const querySnapshot = await getDocs(q);
+      const items = querySnapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setMyItems(items);
+    } catch (error) {
+      console.error("Error fetching items:", error);
+    }
   };
 
   const handleDelete = async (id) => {
@@ -49,7 +53,7 @@ function MyReports() {
     <div className="myreports-container">
       <h2 className="myreports-title">📝 My Reported Items</h2>
       {myItems.length === 0 ? (
-        <p>You haven’t reported anything yet.</p>
+        <p className="empty-message">You haven’t reported anything yet.</p>
       ) : (
         <div className="myreports-grid">
           {myItems.map(item => (
@@ -59,7 +63,7 @@ function MyReports() {
               <p><strong>Description:</strong> {item.description}</p>
               <p><strong>Contact:</strong> {item.contact}</p>
               <button className="delete-btn" onClick={() => handleDelete(item.id)}>
-                Delete
+                🗑 Delete
               </button>
             </div>
           ))}

@@ -1,0 +1,105 @@
+.custom-footer {
+  width: 100%;
+  background-color: #fff1e6;
+  color: #333;
+  padding: 10px 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  /* box-sizing: border-box; */
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: left;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #eb6424;
+}
+
+.footer-quote {
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 10px;
+  max-width: 300px;
+}
+
+.footer-column h4 {
+  color: #eb6424;
+  margin-bottom: 8px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 6px;
+}
+
+.footer-column a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-column a:hover {
+  color: #eb6424;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+}
+
+/* Floating buttons */
+.floating-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.floating-buttons button {
+  background-color: #eb6424;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.floating-buttons button:hover {
+  background-color: #f78909;
+}
+
+.floating-buttons .icon {
+  font-size: 18px;
+}
+
+/* Dark mode styling */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+body.dark-mode .custom-footer {
+  background-color: #2a2a2a;
+  color: #eee;
+}
+
+body.dark-mode a {
+  color: #f0c674;
+}

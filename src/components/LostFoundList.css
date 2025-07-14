@@ -1,0 +1,137 @@
+/* Common */
+.lost-found-list-wrapper {
+  margin-top: 40px;
+}
+
+.reported-items-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--highlight);
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Foda Display', sans-serif;
+  position: relative;
+}
+
+.reported-items-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--highlight);
+  margin: 10px auto 0;
+  border-radius: 10px;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.items-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.item-card {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+  background-color: var(--card-bg);
+  border: 2px solid var(--card-border);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.item-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+
+.item-type-lost,
+.item-type-found {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.item-type-lost {
+  background-color: #ffe0dc;
+  color: #d32f2f;
+}
+
+.item-type-found {
+  background-color: #d7f5dd;
+  color: #388e3c;
+}
+
+.item-desc {
+  font-size: 15px;
+  color: var(--text-light);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.item-contact {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+  background-color: var(--highlight-bg);
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.smart-link {
+  text-decoration: none;
+  color: var(--highlight);
+  font-weight: 500;
+}
+
+/* Theme Variables */
+:root {
+  --bg: #fffaf3;
+  --text-main: #333;
+  --text-light: #555;
+  --highlight: #EB6424;
+  --highlight-bg: #fff1db;
+  --card-bg: #fff;
+  --card-border: #fae3b0;
+}
+
+body.dark {
+  --bg: #121212;
+  --text-main: #eee;
+  --text-light: #aaa;
+  --highlight: #ff8f40;
+  --highlight-bg: #1e1e1e;
+  --card-bg: #1a1a1a;
+  --card-border: #333;
+}
+
+body {
+  background-color: var(--bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

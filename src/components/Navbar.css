@@ -1,55 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+.main-content {
+  padding-top: 80px;
+}
+
 .navbar {
-  background-color: #EB6424; /* primary accent */
-  color: white;
-  padding: 12px 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; /* stays on top of everything */
+  background-color: #ffffffcc; /* semi-transparent */
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(200, 200, 200, 0.4);
+  border-radius: 16px;
+  padding:  1px 24px;
   display: flex;
+  margin: 6px 10px;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-out;
 }
 
 .navbar-title {
-  font-size: 24px;
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 1.6rem;
   font-weight: bold;
-  color: white;
-  text-decoration: none;
+  color: #EB6424;
 }
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 16px;
 }
 
 .nav-links a {
-  color: white;
-  font-weight: 500;
   text-decoration: none;
+  color: #333;
   padding: 8px 14px;
-  border-radius: 6px;
-  transition: all 0.2s ease;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav-links a:hover {
-  background-color: #F78909;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(250, 149, 0, 0.3);
-  text-decoration: none;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 .logout-button {
   background-color: #f44336;
   color: white;
   border: none;
-  padding: 6px 12px;
+  padding: 8px 14px;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 
 .logout-button:hover {
   background-color: #d32f2f;
 }
-
-.user-email {
-  margin-right: 10px;
-  font-weight: bold;
-}
-

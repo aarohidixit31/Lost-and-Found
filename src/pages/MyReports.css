@@ -11,7 +11,11 @@
   margin-bottom: 20px;
   font-weight: 600;
 }
-
+.empty-message {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
 .myreports-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -53,6 +57,7 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
   font-weight: 600;
 }
 
