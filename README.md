@@ -1,6 +1,8 @@
-# 🕵️‍♂️ Lost and Found Web App
+# 🕵️‍♂️ Back2youu
 
 A responsive web app to report, find, and manage lost and found items within a community.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1a525241-f920-4f4c-91f9-915573a6c76e/deploy-status)](https://app.netlify.com/sites/back2youu/deploys)
 
 ---
 
@@ -24,19 +26,26 @@ A responsive web app to report, find, and manage lost and found items within a c
 
 ---
 
-## Screenshots
+## 🖥️ Live Demo  
+[🔗 Open Live Site](https://back2youu.netlify.app/)
 
-### 🏠 Home Page
-![Home Page](./assets/ss1.png)
+---
 
-### ✨ Signup Page
-![Signup Page](./assets/ss2.png)
+## 📸 Screenshots  
 
-### 🎉 Confetti Celebration (Success)
-![Success Celebration](./assets/ss3.png)
+### 🏠 Home Page  
+![Home Page](src/assets/screenshots/ss1.png)
 
-### 🔐 Login Page
-![Login Page](./assets/ss.png)
+### ✨ Signup Page  
+![Signup Page](src/assets/screenshots/ss2.png)
+
+### 🎉 Success Celebration  
+![Success Celebration](src/assets/screenshots/ss3.png)
+
+### 🔐 Login Page  
+![Login Page](src/assets/screenshots/ss.png)
+
+---
 
 
 ## 📂 Folder Structure
@@ -52,14 +61,6 @@ A responsive web app to report, find, and manage lost and found items within a c
 
 ---
 
-## 🖥️ Live Demo
-[🔗 Netlify Deployment](https://back2youu.netlify.app/)
-
----
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1a525241-f920-4f4c-91f9-915573a6c76e/deploy-status)](https://app.netlify.com/projects/back2youu/deploys)
-
----
 ## 📝 How to Run Locally
 ```bash
 # Clone the repository
