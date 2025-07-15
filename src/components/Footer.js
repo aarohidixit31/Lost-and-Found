@@ -1,10 +1,16 @@
 import React from 'react';
 import './Footer.css';
-import { FaSun, FaMoon, FaShareAlt, FaInstagram, FaLinkedin, FaGithub, FaLink } from 'react-icons/fa';
+import confetti from 'canvas-confetti';
+import { FaShareAlt, FaInstagram, FaLinkedin, FaGithub, FaLink, FaSmile } from 'react-icons/fa';
 
 function Footer() {
-  const toggleTheme = () => {
-    document.body.classList.toggle('dark-mode');
+  const surpriseMessage = () => {
+    alert('🎉 Surprise! You’re awesome for visiting Back2youu. Have a great day!');
+    confetti({
+      particleCount: 150,
+      spread: 100,
+      origin: { y: 0.6 },
+    });
   };
 
   const shareWebsite = async () => {
@@ -22,8 +28,8 @@ function Footer() {
   return (
     <>
       <div className="floating-buttons">
-        <button onClick={toggleTheme} title="Toggle Theme">
-          <FaMoon className="icon" />
+        <button onClick={surpriseMessage} title="Surprise!">
+          <FaSmile className="icon" />
         </button>
         <button onClick={shareWebsite} title="Share Website">
           <FaShareAlt className="icon" />
@@ -35,7 +41,7 @@ function Footer() {
           <div className="footer-column">
             <h2 className="footer-title">Back2youu</h2>
             <p className="footer-quote">
-              Our mission is to reconnect people with their lost items-quickly, safely, and with kindness.🧡 
+              Our mission is to reconnect people with their lost items — quickly, safely, and with kindness. 🧡
             </p>
           </div>
 

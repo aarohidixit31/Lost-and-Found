@@ -23,7 +23,8 @@
 }
 
 .navbar-title {
-  font-family: 'Cedarville Cursive', cursive;
+  /* font-family: 'Cedarville Cursive', cursive; */
+  font-family: "Fascinate Inline", system-ui;
   font-size: 1.6rem;
   font-weight: bold;
   color: #EB6424;

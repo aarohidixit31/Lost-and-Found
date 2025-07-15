@@ -4,10 +4,12 @@ import { useAuth } from '../context/AuthContext';
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebase';
 import './Navbar.css';
+// import { useTheme } from '../context/ThemeContext';
 
 function Navbar() {
   const { currentUser } = useAuth();
   const navigate = useNavigate();
+  //  const { darkMode, setDarkMode } = useTheme();
 
   const handleLogout = async () => {
     try {
@@ -34,6 +36,7 @@ function Navbar() {
           <>
             <Link to="/myreports">My Reports</Link>
             <button onClick={handleLogout} className="logout-button">Logout</button>
+            
           </>
         )}
       </div>

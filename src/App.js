@@ -1,15 +1,13 @@
-// App.js
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar.js';
-import Home from './pages/Home.js';
-import AddItem from './pages/AddItems.js';
-import Login from './pages/Login.js';
-import Signup from './pages/SignUp.js';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import AddItem from './pages/AddItems';
+import Login from './pages/Login';
+import Signup from './pages/SignUp';
 import MyReports from './pages/MyReports';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthProvider } from './context/AuthContext';
-import ThemeToggle from './components/ThemeToggle';
 
 function App() {
   return (
@@ -24,7 +22,6 @@ function App() {
           <Route path="/signup" element={<Signup />} />
         </Routes>
       </AuthProvider>
-      <ThemeToggle />
       <ToastContainer position="top-center" autoClose={2000} />
     </Router>
   );
