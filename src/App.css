@@ -22,6 +22,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .App-link {
@@ -34,5 +37,17 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 600px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+    padding: 10px;
+  }
+
+  .App-logo {
+    height: 30vmin;
   }
 }

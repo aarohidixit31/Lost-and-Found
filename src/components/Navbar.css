@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
 .main-content {
   padding-top: 80px;
 }
@@ -8,12 +9,12 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999; /* stays on top of everything */
-  background-color: #ffffffcc; /* semi-transparent */
+  z-index: 999;
+  background-color: #ffffffcc;
   backdrop-filter: blur(15px);
   border: 1px solid rgba(200, 200, 200, 0.4);
   border-radius: 16px;
-  padding:  1px 24px;
+  padding: 1px 24px;
   display: flex;
   margin: 6px 10px;
   justify-content: space-between;
@@ -23,7 +24,6 @@
 }
 
 .navbar-title {
-  /* font-family: 'Cedarville Cursive', cursive; */
   font-family: "Fascinate Inline", system-ui;
   font-size: 1.6rem;
   font-weight: bold;
@@ -62,4 +62,47 @@
 
 .logout-button:hover {
   background-color: #d32f2f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .navbar-title {
+    font-size: 1.4rem;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .logout-button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-title {
+    font-size: 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .logout-button {
+    font-size: 13px;
+  }
 }

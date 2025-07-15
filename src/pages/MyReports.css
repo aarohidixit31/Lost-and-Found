@@ -100,3 +100,10 @@
 .delete-btn:hover {
   background-color: #c73e0c;
 }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .myreports-container {
+    padding: 20px 10px;
+  }
+}

@@ -135,3 +135,46 @@ body {
   background-color: var(--bg);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reported-items-title {
+    font-size: 22px;
+  }
+
+  .item-card {
+    flex: 0 0 240px;
+    padding: 16px;
+  }
+
+  .item-title {
+    font-size: 18px;
+  }
+
+  .item-desc {
+    font-size: 14px;
+  }
+
+  .item-contact {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-card {
+    flex: 0 0 200px;
+    padding: 14px;
+  }
+
+  .item-title {
+    font-size: 16px;
+  }
+
+  .item-desc {
+    font-size: 13px;
+  }
+
+  .item-contact {
+    font-size: 12px;
+  }
+}

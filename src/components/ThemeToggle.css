@@ -24,3 +24,18 @@
 .floating-buttons button:hover {
   background: #d8540f;
 }
+
+/* Responsive */
+@media (max-width: 480px) {
+  .floating-buttons {
+    right: 12px;
+    bottom: 12px;
+    gap: 10px;
+  }
+
+  .floating-buttons button {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+}

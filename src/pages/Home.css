@@ -151,7 +151,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* Items Grid - Horizontal Scroll with Orange Scrollbar */
+/* Items Grid - Horizontal Scroll */
 .scroll-section {
   overflow-x: hidden;
   padding: 0 20px 20px 20px;
@@ -159,7 +159,7 @@ body {
 }
 
 .scroll-offset {
-  scroll-margin-top: 120px; /* Same as navbar height */
+  scroll-margin-top: 120px;
 }
 
 .items-grid {
@@ -186,7 +186,7 @@ body {
   box-shadow: 0 12px 28px rgba(250, 149, 0, 0.15);
 }
 
-/* Orange Themed Scrollbar */
+/* Orange Scrollbar */
 .items-grid::-webkit-scrollbar {
   height: 8px;
 }
@@ -203,4 +203,31 @@ body {
 
 .items-grid::-webkit-scrollbar-thumb:hover {
   background: #eb6424;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 32px;
+  }
+
+  .home-subtitle {
+    font-size: 16px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .search-bar input,
+  .dropdown {
+    width: 100%;
+  }
+
+  .report-button {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
 }
