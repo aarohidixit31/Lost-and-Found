@@ -24,6 +24,11 @@ body {
   animation: slideIn 1s ease-in-out;
 }
 
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .home-title {
   font-size: 42px;
   font-weight: 800;
@@ -38,17 +43,6 @@ body {
   margin: 0 auto 28px auto;
   color: #5c5c5c;
   line-height: 1.6;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* Search Section */
@@ -113,14 +107,8 @@ body {
 
 /* Info Banner */
 @keyframes slideFade {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .info-banner {
@@ -151,7 +139,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* Items Grid - Horizontal Scroll */
+/* Items Grid */
 .scroll-section {
   overflow-x: hidden;
   padding: 0 20px 20px 20px;
@@ -207,6 +195,9 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .home-container{
+    margin-top: 1rem;
+  }
   .home-title {
     font-size: 32px;
   }
@@ -218,7 +209,7 @@ body {
   .search-bar {
     flex-direction: column;
     gap: 12px;
-    width: 100%;
+    width: 80%;
   }
 
   .search-bar input,
@@ -229,5 +220,34 @@ body {
   .report-button {
     padding: 10px 24px;
     font-size: 15px;
+  }
+
+  .item-card {
+    flex: 0 0 220px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container{
+    margin-top: 1rem;
+  }
+  
+  .home-title {
+    font-size: 26px;
+  }
+
+  .home-subtitle {
+    font-size: 14px;
+  }
+
+  .report-button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .item-card {
+    flex: 0 0 180px;
+    padding: 14px;
   }
 }

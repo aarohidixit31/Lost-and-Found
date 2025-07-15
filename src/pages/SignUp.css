@@ -126,22 +126,35 @@ body {
   color: #888;
   margin-top: 20px;
 }
-/* Responsive for Signup Page */
+/* Tablet - Matching Login Logic */
 @media (max-width: 768px) {
   .signup-container {
+    width: 70%;
+    margin-bottom: 18rem;
     padding: 30px 40px;
-    max-width: 90%;
-    margin-top: 2rem;
+  }
+
+  .signup-container h2 {
+    font-size: 28px;
+  }
+
+  .signup-form input {
+    width: 90%;
+    font-size: 14px;
   }
 
   .signup-form button {
-    width: 100%;
+    width: 98%;
+    font-size: 15px;
   }
 }
 
+/* Mobile - Same as Login Responsive */
 @media (max-width: 480px) {
   .signup-container {
-    padding: 25px 20px;
+    width: 85%;
+    padding: 24px 16px;
+    margin-bottom: 18rem;
   }
 
   .signup-container h2 {
@@ -149,12 +162,15 @@ body {
   }
 
   .signup-form input {
+    width: 90%;
+    font-size: 13px;
     padding: 12px;
-    font-size: 14px;
   }
 
   .signup-form button {
-    padding: 12px;
+    width: 98%;
     font-size: 14px;
+    padding: 12px;
   }
 }
+

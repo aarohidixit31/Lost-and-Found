@@ -101,9 +101,62 @@
   background-color: #c73e0c;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
   .myreports-container {
-    padding: 20px 10px;
+    width: 85%;
+    margin: 80px auto 30px auto;
+    padding: 20px 16px;
+  }
+
+  .myreports-title {
+    font-size: 24px;
+  }
+
+  .myreport-card {
+    padding: 16px;
+  }
+
+  .myreport-card h3 {
+    font-size: 18px;
+  }
+
+  .myreport-card p {
+    font-size: 14px;
+  }
+
+  .delete-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .myreports-container {
+    width: 90%;
+    margin: 60px auto 20px auto;
+    padding: 16px 12px;
+  }
+
+  .myreports-title {
+    font-size: 22px;
+  }
+
+  .myreport-card {
+    padding: 14px;
+  }
+
+  .myreport-card h3 {
+    font-size: 16px;
+  }
+
+  .myreport-card p {
+    font-size: 13px;
+  }
+
+  .delete-btn {
+    padding: 7px 10px;
+    font-size: 13px;
   }
 }

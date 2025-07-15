@@ -67,8 +67,8 @@
 .add-form input,
 .add-form textarea,
 .add-form select {
-  width: 95%;
-  padding: 12px 12px;
+  width: 100%;
+  padding: 12px;
   margin-bottom: 20px;
   font-size: 15px;
   background-color: #fffaf3;
@@ -103,14 +103,17 @@
   transform: scale(1.02);
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Tablet - As You Wrote */
+@media (max-width: 768px) {
   .additems-container {
-    padding: 30px 20px;
+    margin-top: 2rem;
+    height: 90%;
+    width: 70%;
+    padding: 30px 24px;
   }
 
   .form-title {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .form-subtitle {
@@ -118,13 +121,51 @@
   }
 
   .add-form input,
-  .add-form textarea,
+  .add-form textarea {
+    width: 90%;
+    font-size: 14px;
+  }
+
   .add-form select {
-    width: 100%;
+    width: 98%;
     font-size: 14px;
   }
 
   .add-form button {
     font-size: 15px;
+  }
+}
+
+/* Mobile - Adjusted same logic */
+@media (max-width: 480px) {
+  .additems-container {
+    width: 85%;
+    padding: 24px 16px;
+    height: auto;
+    margin-top: 1.5rem;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+
+  .form-subtitle {
+    font-size: 12px;
+  }
+
+  .add-form input,
+  .add-form textarea {
+    width: 90%;
+    font-size: 13px;
+  }
+
+  .add-form select {
+    width: 98%;
+    font-size: 13px;
+  }
+
+  .add-form button {
+    font-size: 14px;
+    padding: 12px;
   }
 }

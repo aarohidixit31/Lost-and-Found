@@ -111,18 +111,62 @@
   margin-top: 20px;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Tablet - Same logic as your previous forms */
+@media (max-width: 768px) {
   .login-container {
-    padding: 30px 30px;
+    width: 70%;
+    margin-bottom: 18rem;
+    /* margin: 2rem auto 0; */
+    padding: 30px 40px;
+  }
+
+  .login-container h2 {
+    font-size: 28px;
+  }
+
+  .login-container p {
+    font-size: 13px;
   }
 
   .login-form input {
+    width: 90%;
     margin-left: 0;
+    font-size: 14px;
   }
 
   .login-form button {
-    width: 100%;
+    width: 98%;
     margin-left: 0;
+    font-size: 15px;
+  }
+}
+
+/* Mobile - Following same pattern */
+@media (max-width: 480px) {
+  .login-container {
+    width: 85%;
+    padding: 24px 16px;
+    margin-bottom: 18rem;
+   
+  }
+
+  .login-container h2 {
+    font-size: 24px;
+  }
+
+  .login-container p {
+    font-size: 12px;
+  }
+
+  .login-form input {
+    width: 90%;
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .login-form button {
+    width: 98%;
+    font-size: 14px;
+    padding: 12px;
   }
 }
