@@ -57,6 +57,9 @@ A responsive web app to report, find, and manage lost and found items within a c
 
 ---
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1a525241-f920-4f4c-91f9-915573a6c76e/deploy-status)](https://app.netlify.com/projects/back2youu/deploys)
+
+---
 ## 📝 How to Run Locally
 ```bash
 # Clone the repository
